@@ -5,3 +5,13 @@ A simple scientific calculator built uisng .NET MAUI Preview 14. Based ont his [
 This is a full working app. The following enhancements are in the pipeline:
 * Implement nested scientific operators (for auto bracket closing)
 * Implement statistical operators (row 1 operators)
+
+## Screen Shots
+###Original Behance Design
+![Original Behance Design](Behance_Concept.png)
+
+###MAUI App - Splash Screen
+![MAUI App - Splash Screen](SplashScreen.png)
+
+###MAUI App - Calculator Screen
+![MAUI App - Calculator Screen](CalcScreen.png)
