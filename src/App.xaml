@@ -1,0 +1,115 @@
+﻿<?xml version = "1.0" encoding = "UTF-8" ?>
+<Application 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiScientificCalculator"
+    x:Class="MauiScientificCalculator.App">
+    <Application.Resources>
+        <ResourceDictionary>
+
+            <!-- Colors -->
+            <Color x:Key="PrimaryColor">#EFBB31</Color>
+            <Color x:Key="SecondaryColor">White</Color>
+            <Color x:Key="PageBackgroundColor">#16191E</Color>
+            <Color x:Key="BorderColor">#33777777</Color>
+
+            <!-- Content Page Style -->
+            <Style TargetType="ContentPage" ApplyToDerivedTypes="True">
+                <Setter Property="NavigationPage.HasNavigationBar" Value="False" />
+                <Setter Property="BackgroundColor" Value="{StaticResource PageBackgroundColor}" />
+            </Style>
+
+            <!-- Grid Styles -->
+            <Style TargetType="Grid">
+                <Setter Property="Padding" Value="0" />
+                <Setter Property="Margin" Value="0" />
+                <Setter Property="RowSpacing" Value="0" />
+                <Setter Property="ColumnSpacing" Value="0" />
+                <Setter Property="VerticalOptions" Value="Fill" />
+                <Setter Property="HorizontalOptions" Value="Fill" />
+                <Setter Property="BackgroundColor" Value="Transparent" />
+            </Style>
+                     
+
+            <!-- Button Styles -->
+            <Style TargetType="Button" x:Key="NumberButtonStyle">
+                <Setter Property="FontSize" Value="22" />
+                <Setter Property="FontFamily" Value="RegularFont" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="BackgroundColor" Value="#202731" />
+                <Setter Property="BorderWidth" Value="0" />
+                <Setter Property="BorderColor" Value="{StaticResource BorderColor}" />
+                <Setter Property="VerticalOptions" Value="Fill" />
+                <Setter Property="HorizontalOptions" Value="Fill" />
+                <Setter Property="CornerRadius" Value="0" />
+                <Setter Property="Padding" Value="0" />
+                <Setter Property="Margin" Value="0,0,1,1" />
+                <Setter Property="FontAutoScalingEnabled" Value="False" />
+            </Style>
+
+            <Style TargetType="Button" x:Key="OperatorButtonStyle">
+                <Setter Property="FontSize" Value="22" />
+                <Setter Property="FontFamily" Value="RegularFont" />
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="BackgroundColor" Value="#EFBB31" />
+                <Setter Property="BorderWidth" Value="0" />
+                <Setter Property="BorderColor" Value="{StaticResource BorderColor}" />
+                <Setter Property="VerticalOptions" Value="Fill" />
+                <Setter Property="HorizontalOptions" Value="Fill" />
+                <Setter Property="CornerRadius" Value="0" />
+                <Setter Property="Padding" Value="0" />
+                <Setter Property="Margin" Value="0,0,1,1" />
+                <Setter Property="FontAutoScalingEnabled" Value="False" />
+            </Style>
+
+            <Style TargetType="Button" x:Key="ScientificOperatorButtonStyle">
+                <Setter Property="FontSize" Value="14" />
+                <Setter Property="FontFamily" Value="RegularFont" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="BackgroundColor" Value="#2C3240" />
+                <Setter Property="BorderWidth" Value="1" />
+                <Setter Property="BorderColor" Value="{StaticResource BorderColor}" />
+                <Setter Property="VerticalOptions" Value="Fill" />
+                <Setter Property="HorizontalOptions" Value="Fill" />
+                <Setter Property="CornerRadius" Value="6" />
+                <Setter Property="Padding" Value="0" />
+                <Setter Property="Margin" Value="6,6" />
+                <Setter Property="Shadow">
+                    <Shadow 
+                        Brush="Black"
+                        Offset="6,6"
+                        Radius="12"
+                        Opacity="0.5"/>
+                </Setter>
+                <Setter Property="FontAutoScalingEnabled" Value="False" />
+            </Style>
+
+
+            <!-- Label Styles -->
+            <Style TargetType="Label" x:Key="EqualsLabelStyle">
+                <Setter Property="FontSize" Value="28" />
+                <Setter Property="TextColor" Value="#EFBB31" />
+                <Setter Property="FontFamily" Value="LightFont" />
+                <Setter Property="LineBreakMode" Value="TailTruncation" />
+                <Setter Property="FontAutoScalingEnabled" Value="False" />
+            </Style>
+
+            <Style TargetType="Label" x:Key="ResultLabelStyle">
+                <Setter Property="FontSize" Value="28" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontFamily" Value="RegularFont" />
+                <Setter Property="LineBreakMode" Value="TailTruncation" />
+                <Setter Property="FontAutoScalingEnabled" Value="False" />
+            </Style>
+
+            <Style TargetType="Label" x:Key="InputBoxLabelStyle">
+                <Setter Property="FontSize" Value="32" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontFamily" Value="LightFont" />
+                <Setter Property="LineBreakMode" Value="WordWrap" />
+                <Setter Property="FontAutoScalingEnabled" Value="False" />
+            </Style>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
