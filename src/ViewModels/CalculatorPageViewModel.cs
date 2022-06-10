@@ -15,7 +15,7 @@ internal partial class CalculatorPageViewModel
     {
     }
 
-    [ICommand]
+    [RelayCommand]
     private void Reset()
     {
         CalculatedResult = "0";
@@ -23,7 +23,7 @@ internal partial class CalculatorPageViewModel
         isSciOpWaiting = false;
     }
 
-    [ICommand]
+    [RelayCommand]
     private void Calculate()
     {
         if (InputText.Length == 0)
@@ -79,20 +79,20 @@ internal partial class CalculatorPageViewModel
         return retString;
     }
 
-    [ICommand]
+    [RelayCommand]
     private void Backspace()
     {
         if (InputText.Length > 0)
             InputText = InputText.Substring(0, InputText.Length - 1);
     }
 
-    [ICommand]
+    [RelayCommand]
     private void NumberInput(string key)
     {
         InputText += key;
     }
 
-    [ICommand]
+    [RelayCommand]
     private void MathOperator(string op)
     {
         if (isSciOpWaiting)
@@ -104,7 +104,7 @@ internal partial class CalculatorPageViewModel
         InputText += $" {op} ";
     }
 
-    [ICommand]
+    [RelayCommand]
     private void RegionOperator(string op)
     {
         if (op == ")")
@@ -113,7 +113,7 @@ internal partial class CalculatorPageViewModel
         InputText += op;
     }
 
-    [ICommand]
+    [RelayCommand]
     private void ScientificOperator(string op)
     {
         InputText += $"{op}(";

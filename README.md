@@ -1,3 +1,7 @@
+# UPDATED TO MAUI GA RELEASE
+## (Not tested on iOS)
+
+
 # MauiScientificCalculator
 A simple scientific calculator built uisng .NET MAUI Preview 14. Based ont his [Behance Concept](https://www.behance.net/gallery/79810231/UIUX-Challenge-04-05-Calculator-App-Icon). 
 
