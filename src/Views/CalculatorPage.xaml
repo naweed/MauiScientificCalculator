@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage 
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -8,7 +8,7 @@
     <Grid
         RowDefinitions="*,68,48,44,44,48,64,64,64,64"
         ColumnDefinitions="*,*,*,*,*">
-        
+
         <!-- Color Answer Row -->
         <BoxView
             VerticalOptions="Fill"
@@ -25,7 +25,7 @@
             Grid.Row="2"
             Grid.RowSpan="4"
             Grid.ColumnSpan="5"/>
-        
+
         <!-- Input Area -->
         <Frame
             HasShadow="False"
@@ -74,7 +74,7 @@
                 HorizontalOptions="End"
                 Grid.Column="1"
                 Style="{StaticResource ResultLabelStyle}"
-                Margin="16,0"/>            
+                Margin="16,0"/>
 
         </Grid>
 
@@ -263,8 +263,8 @@
             Style="{StaticResource ScientificOperatorButtonStyle}"
             Text=")"
             Command="{Binding RegionOperatorCommand}"
-            CommandParameter=")" />        
-        
+            CommandParameter=")" />
+
 
 
         <!-- Mathematical Operators -->

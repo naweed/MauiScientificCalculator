@@ -71,7 +71,7 @@ internal partial class CalculatorPageViewModel
 
         var retString = InputText;
 
-        foreach(var key in _opMapper.Keys)
+        foreach (var key in _opMapper.Keys)
         {
             retString = retString.Replace(key, _opMapper[key]);
         }
